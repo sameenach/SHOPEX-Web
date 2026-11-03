@@ -24,3 +24,185 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Fashion Banner */
+.banner {
+  width: 100%;
+  height: 65vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #f8f1e7;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Offer Section */
+.offer-section {
+  background-color: #faf6f0;
+  padding: 75px 5%;
+}
+
+.offer-heading {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 50px;
+}
+
+.offer-subtitle {
+  color: #a47b52;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.offer-heading h2 {
+  color: #38291f;
+  font-family: Georgia, serif;
+  font-size: 42px;
+  margin: 12px 0;
+}
+
+.offer-description {
+  color: #817366;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Home Product Collection */
+.offer-section .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+}
+
+.offer-section .product-card {
+  width: 30%;
+  min-width: 230px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #eee3d7;
+  box-shadow: 0 5px 20px rgba(65, 45, 30, 0.06);
+  transition: 0.3s ease;
+}
+
+.offer-section .product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(65, 45, 30, 0.13);
+}
+
+.offer-section .product-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.offer-section .product-image img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  transition: 0.5s ease;
+}
+
+.offer-section .product-card:hover .product-image img {
+  transform: scale(1.06);
+}
+
+/* Badge */
+.discount-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #fffaf3;
+  color: #8b603b;
+  padding: 9px 13px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Product Information */
+.offer-section .product-info {
+  display: block;
+  padding: 24px 15px 28px;
+  background: #fff;
+}
+
+.offer-section .product-info h3 {
+  color: #392a20;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.offer-section .product-info p {
+  color: #8c7d70;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.shop-button {
+  background: #49352a;
+  color: #fff;
+  border: 1px solid #49352a;
+  padding: 12px 23px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.shop-button:hover {
+  background: #a47b52;
+  border-color: #a47b52;
+}
+.offer-section .product-info {
+  display: block;
+  min-height: 170px;
+  padding: 24px 15px 28px;
+  background-color: #ffffff;
+  text-align: center;
+  visibility: visible;
+}
+
+.offer-section .product-info h3,
+.offer-section .product-info p {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .banner {
+    height: 40vh;
+  }
+
+  .offer-heading h2 {
+    font-size: 30px;
+  }
+
+  .offer-section .product-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 30vh;
+  }
+
+  .offer-section .product-card {
+    width: 100%;
+  }
+}
